@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "hash_map": "c",
+        "*.tpl": "html",
+        "*.jsp": "html",
+        "*.wxml": "html",
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript",
+        "wchar.h": "c",
+        "stdio.h": "c"
+    }
+}
