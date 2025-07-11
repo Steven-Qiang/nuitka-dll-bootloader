@@ -1,0 +1,5 @@
+*.onefile-build
+*.dist
+*.build
+!nuitka-extractor.exe
+*extracted

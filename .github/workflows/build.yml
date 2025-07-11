@@ -39,9 +39,9 @@ jobs:
           name: boot-executable
           path: release
 
-      - name: Get current date
-        id: date
-        run: echo "date=$(date +'%Y%m%d')" >> $GITHUB_ENV
+      - name: Get current version
+        id: version
+        run: echo "version=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
         shell: bash
 
       - name: Create GitHub Release
@@ -50,8 +50,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v${{ env.date }}
-          release_name: Release v${{ env.date }}
+          tag_name: v${{ env.version }}
+          release_name: Release v${{ env.version }}
           draft: false
           prerelease: false
 
